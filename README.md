@@ -1,7 +1,9 @@
 #        Streakflow For Crowd Segmentation          #
 [![GitHub license](https://img.shields.io/github/license/saideepakreddy0308/DIP_Project)](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/LICENSE)
-[![GitHub repo size](https://img.shields.io/github/repo-size/saideepakreddy0308/DIP_Project.svg?logo=github&style=social)](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/saideepakreddy0308/DIP_Project.svg?logo=git&style=social)](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/) 
+[![GitHub repo size](https://img.shields.io/github/repo-size/saideepakreddy0308/DIP_Project.svg?logo=github&style=social)](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/saideepakreddy0308/DIP_Project.svg?logo=git&style=social)](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation)
+[![Issues](https://camo.githubusercontent.com/926d8ca67df15de5bd1abac234c0603d94f66c00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e747269627574696f6e732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666c6174)](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/issues)
+[![Say Thanks!](https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg)](mailto:saideepakreddy0308@gmail.com)
 
 ## Introduction
 Dominant crowd flow segmentation is the first step towards building an automated monitoring system for high density crowd scenes. In computer vision, optical flow is widely used to compute pixel wise instantaneous motion between consecutive frames, and numerous methods are reported to efficiently compute accurate optical flow. However, optical flow does not capture long-range temporal dependencies, since it is based on just two frames. In order to achieve an accurate representation of flow from crowd motion, we use the streaklines to compute a new motion field which we refer to as streak flow. To compute streak flow, streaklines are computed by temporally integrating optical flow.
@@ -55,15 +57,15 @@ The source code of this project is written in **Python**. So, you'll require **O
 5. [**Watershed.py**](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Code_Files/Watershed.py) : This script shows the  segregating of the flow pattern which we have captured in the similarities. In OpenCV we have a marker-based watershed algorithm where you specify which are all valley points are to be merged and which are not. In every frame of our sequence, we give different labels for our object we know. Label the region which we are sure of being the foreground or object with one color, label the region which we are sure of being background or non-object with another color and finally the region which we are not sure of anything, label it with 0. That is our marker. Then apply watershed algorithm. Then our marker will be updated with the labels we gave, and the boundaries of objects will have a value of -1.
 Morphological opening and closing is used to remove white noise and holes respectively. After this step cv.dilate() is used to increase object boundary to the background. The important functions that we use in our code are cv.connectedComponents() (for markers) as well as cv.watershed() (to get the final watershed segmentation). 
 
-## About other Files:
+#### About other Files:
 - Project Report.pdf is the project report based on the output results of the python codes.
 
   > **You can download the report [here](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Project%20Report.pdf)
    
-- After installing all the required python packages you can try running the crowd_flow.py file to see the output.
+- After installing all the required python packages you can try running the **crowd_flow.py** file to see the output.
 
 ## How to run the code
-Go to the directory.
+Go to the Code_Files directory.
 Then, 
 1. Run the first code with command `python crowd_flow.py` to start tracking.
 2. Finish program with `q` or `Esc` key.

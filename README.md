@@ -46,7 +46,7 @@ The source code of this project is written in **Python**. So, you'll require **O
 
 ## Scripts
 
-1. [**crowd_flow.py**](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Code_Files/crowd_flow.py) : This script is the main python program which consists of all the scripts (OpticalFlow,Orientation_Histogram,HeatMap,Watershed algorithms).
+1. [**crowd_flow.py**](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Code_Files/crowd_flow.py) : This script is the main python program which consists of all other scripts namely OpticalFlow, Orientation_Histogram, HeatMap, Watershed algorithms.
 
 2. [**OpticalFlow.py**](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Code_Files/OpticalFlow.py) : This script is about Optical flow. Optical flow is the pattern of apparent motion of image objects between two consecutive frames caused by the movement of objects or camera. It is shown in a 2D vector field where each vector is a displacement vector showing the movement of points from first frame to second.In our code the algorithm we use for visualizing Optical flow in our dataset is the farneback algorithm which needs a 1D input image, so here we convert BRG image to Grayscale. Then use the function cv.calcOpticalFlowFarneback(). We color code the result for better visualization. Direction corresponds to Hue value of the image. Magnitude corresponds to Value plane.
 

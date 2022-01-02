@@ -61,6 +61,7 @@ The source code of this project is written in **Python**. So, you'll require **O
 Morphological opening and closing is used to remove white noise and holes respectively. cv.dilate() is used to increase object boundary to the background. Other important functions we use in our code are cv.connectedComponents() (for markers) as well as cv.watershed() (to get the final watershed segmentation). 
 
 #### About other Files/Folders:
+- Input video file to all the scripts is **2181-2_70.mov**.
 - Project Report.pdf is the project report based on the output results of the python codes.
 
   > **You can download the report [here](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Project%20Report.pdf)
@@ -71,8 +72,9 @@ Morphological opening and closing is used to remove white noise and holes respec
 ## How to run the code
 Go to the Code_Files directory.
 Then, 
-1. Run the first code with command `python crowd_flow.py` to start tracking.
-2. Finish program with `q` or `Esc` key.
+1. Download the input video file into your local directory.
+2. Run the first code with command `python crowd_flow.py` to start tracking.
+3. Finish program with `q` or `Esc` key.
 
 ## References
 * R. Mehran, B. E. Moore, and M. Shah, “A streakline representation of flow in crowded scenes,” in 

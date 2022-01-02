@@ -66,7 +66,7 @@ Morphological opening and closing is used to remove white noise and holes respec
   > **You can download the report [here](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Project%20Report.pdf)
  
 - Screenshots of written-output video are saved in the [Frames](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Frames) directory.
-- Results(output is written in .avi format) of the scripts are contained in the [Results](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Results) directory.
+- Results(output is written in .avi/.mp4 format) of the scripts are contained in the [Results](https://github.com/saideepakreddy0308/Dominant-Crowd-Flow-Segmentation/blob/main/Results) directory.
 
 ## How to run the code
 Go to the Code_Files directory.
